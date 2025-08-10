@@ -11,7 +11,8 @@ const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
 // Dump all the links from the page.
-await page.goto('https://baidu.com/');
+const url = 'https://apply.jtw.beijing.gov.cn/apply/app/common/person/register';
+await page.goto(url);
 
 const links = await page.evaluate(() => {
     return Array.from(document.querySelectorAll('a')).map(row => {

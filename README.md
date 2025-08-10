@@ -1,6 +1,7 @@
 # lightpanda-playground
 ## 速度对比
-### chrome
+### baidu
+#### chrome
 
 ```
 time node app-base.js
@@ -70,7 +71,7 @@ time node app-base.js
 node app-base.js  2.28s user 1.59s system 69% cpu 5.587 total
 ```
 
-### lightpanda
+#### lightpanda
 
 ```
 (base) ➜  lightpanda-playground git:(main) ✗ time node app-lp.js
@@ -84,4 +85,44 @@ node app-base.js  2.28s user 1.59s system 69% cpu 5.587 total
   'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001'
 ]
 node app-lp.js  0.23s user 0.05s system 5% cpu 5.085 total
+```
+
+### apply.jtw.beijing.gov.cn
+
+#### chrome
+
+```
+ time node app-base.js 
+[
+  'http://jtw.beijing.gov.cn',
+  '#',
+  'http://www.beijing.gov.cn/',
+  'https://xkczb.jtw.beijing.gov.cn/bszn/index.html',
+  'https://xkczb.jtw.beijing.gov.cn',
+  '/apply/app/common/person/getCode',
+  '/apply/app/common/user/register',
+  '#none',
+  'http://bszs.conac.cn/sitename?method=show&id=09EC6319DD3A04AFE053012819AC6A4C',
+  'https://beian.miit.gov.cn/'
+]
+node app-base.js  2.10s user 1.15s system 38% cpu 8.499 total
+```
+
+#### lightpanda
+
+```
+time node app-lp.js  
+[
+  'http://jtw.beijing.gov.cn',
+  '#',
+  'http://www.beijing.gov.cn/',
+  'https://xkczb.jtw.beijing.gov.cn/bszn/index.html',
+  'https://xkczb.jtw.beijing.gov.cn',
+  '/apply/app/common/person/getCode',
+  '/apply/app/common/user/register',
+  '#none',
+  'http://bszs.conac.cn/sitename?method=show&id=09EC6319DD3A04AFE053012819AC6A4C',
+  'https://beian.miit.gov.cn/'
+]
+node app-lp.js  0.21s user 0.09s system 6% cpu 4.741 total
 ```
