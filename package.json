@@ -1,0 +1,24 @@
+{
+  "name": "lightpanda-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freelw/lightpanda-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freelw/lightpanda-playground/issues"
+  },
+  "homepage": "https://github.com/freelw/lightpanda-playground#readme",
+  "type": "module",
+  "dependencies": {
+    "puppeteer-core": "^24.16.0"
+  }
+}
