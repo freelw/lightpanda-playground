@@ -19,6 +19,7 @@
   "homepage": "https://github.com/freelw/lightpanda-playground#readme",
   "type": "module",
   "dependencies": {
+    "puppeteer": "^24.16.0",
     "puppeteer-core": "^24.16.0"
   }
 }

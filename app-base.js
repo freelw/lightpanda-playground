@@ -3,7 +3,7 @@
 import puppeteer from 'puppeteer';
 
 const browser = await puppeteer.launch({
-
+    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
 });
 
 // The rest of your script remains the same.
